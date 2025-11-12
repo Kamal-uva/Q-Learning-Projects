@@ -21,3 +21,13 @@ This mini project demonstrates the basics of **Q-learning** in a tiny discrete e
 ## Run the Project
 ```bash
 python simple_q_learning.py
+
+---
+
+## Example Output
+Q-Table after learning:
+start: {'left': -0.2, 'right': 0.8}
+candy: {'left': 0.0, 'right': 0.0}
+fire: {'left': 0.0, 'right': 0.0}
+
+---
