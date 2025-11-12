@@ -29,3 +29,14 @@ This project implements **Q-learning** in a 4×4 gridworld where an agent learns
 ```bash
 python gridworld_q_learning.py
 
+---
+
+## Example Output
+Optimal Policy Grid:
+→ → ↓ ↓
+↑ → ↓ ↓
+↑ → ↓ ↓
+↑ → ↓ G
+
+Path taken from start to goal: [0, 1, 2, 3, 7, 11, 15]
+Steps to goal: 6
