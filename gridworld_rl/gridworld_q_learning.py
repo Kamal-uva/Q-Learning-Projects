@@ -77,3 +77,23 @@ while state != goal_state and steps < 20:
 
 print(f"\nPath taken from start to goal: {path}")
 print(f"Steps to goal: {steps}")
+
+def print_grid(path, grid_size=4):
+    """Print the grid showing the agent's current position"""
+    for row in range(grid_size):
+        for col in range(grid_size):
+            state = row * grid_size + col
+            if state == path[-1]:
+                print('A', end=' ')  # Agent
+            elif state == goal_state:
+                print('G', end=' ')
+            else:
+                print('.', end=' ')
+        print()
+    print("\n")
+
+print("\nVisualizing agent path to goal:")
+for i in range(len(path)):
+    os.system('cls' if os.name == 'nt' else 'clear')  # Clear terminal
+    print_grid(path[:i+1])
+    time.sleep(0.5)
