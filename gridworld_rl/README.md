@@ -1,7 +1,7 @@
 
 ---
 
-## **gridworld_rl/README.md**
+## **README.md**
 ```markdown
 # Gridworld Q-Learning Project
 
